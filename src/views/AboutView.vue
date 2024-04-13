@@ -92,12 +92,6 @@
         org="Google Developer Group Akure"
         date="August 2023 - present"
       >
-        <ul class="flex flex-col space-y-4 mt-4">
-          <li>
-            Designed a clean and intuitive user interface that reflects the
-            values and identity of the church.
-          </li>
-        </ul>
       </ExpCard>
       <ExpCard
         title="frontend developer"

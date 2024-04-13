@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <custom-cursor
-    :targets="['img', 'a', 'button']"
+    :targets="['img', 'a', 'i', 'btn', 'btn-alt', 'button']"
     :circleColor="'#915EFF'"
     :circleColorHover="'#915EFF'"
     :dotColor="'#915EFF'"
@@ -19,7 +19,7 @@
   import Navbar from "./components/Navbar.vue"
   import CustomCursor from "./components/CustomCursor.vue"
 </script>
-
+ 
 <style>
   * {
     cursor: none;

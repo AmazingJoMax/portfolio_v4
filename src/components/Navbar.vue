@@ -1,7 +1,20 @@
 <template>
+  <div id="navbar-desktop" class="hidden md:flex text-white">
+    <div class="name">Maxwell</div>
+    <div class="nav-items flex gap-6">
+      <RouterLink :to="{ name: 'home' }">Home</RouterLink>
+      <RouterLink :to="{ name: 'about' }">About</RouterLink>
+      <RouterLink :to="{ name: 'blog' }">Blog</RouterLink>
+      <RouterLink :to="{ name: 'projects' }">Projects</RouterLink>
+      <RouterLink :to="{ name: 'contact' }">Contact</RouterLink>
+    </div>
+  </div>
+
+  <!-- Mobile nav -->
+
   <div
     id="navbar"
-    class="text-white grid items-center gap-4 navbar"
+    class="md:hidden text-white grid items-center gap-4 navbar"
     :class="{ show: showMenu === true }"
   >
     <RouterLink

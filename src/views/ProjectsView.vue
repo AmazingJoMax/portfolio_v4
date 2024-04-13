@@ -1,5 +1,5 @@
 <template>
-    <div id="projects" class="w-full text-white mb-8">
+    <div id="projects" class="w-full text-white mb-20 flex flex-col space-y-6">
       <PageBlocker content="Desktop view is temporarily unavailable. Please switch to mobile" />
       <PageHeader title="My Projects" />
       <p class="my-10 text-xl text-center">Here are some of the works I've done so far</p>
@@ -11,7 +11,7 @@
             </div>
             <span class="text-lg font-semibold">Anythingfood</span>
             <p class="description text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quibusdam aliquam ea officiis eum doloribus?
+              A site where you can call your favourite restaurant in town and order food
             </p>
             <div class="flex">
               <Tag name="Vue.js" class="border-green-600 text-green-600" />
@@ -26,7 +26,7 @@
             </div>
             <span class="text-lg font-semibold">Dominion Word And Prayer Chapel</span>
             <p class="description text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quibusdam aliquam ea officiis eum doloribus?
+              A church site that helps bring content closer to its users no matter the location
             </p>
             <div class="flex">
               <Tag name="Vue.js" class="border-green-600 text-green-600" />
@@ -35,14 +35,14 @@
             </div>
           </div> 
         </ProjectCard>
-        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://anythingfood.ng" siteName="wypa">
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="#" siteName="wypa">
           <div class="flex flex-col gap-4">
             <div class="image">
-              <img src="../assets/images/anythingfood.png" alt="">
+              <img src="../assets/images/wypa.png" alt="">
             </div>
             <span class="text-lg font-semibold">Wypa</span>
             <p class="description text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quibusdam aliquam ea officiis eum doloribus?
+              An app where its users can either request for cleaning service from cleaners around or apply to be a cleaner and earn extra income
             </p>
             <div class="flex">
               <Tag name="Flutter" class="border-blue-600 text-blue-600" />
@@ -51,6 +51,12 @@
         </ProjectCard>
 
       </div>
+      <RouterLink
+        :to="{ name: 'contact' }"
+        class="btn text-nowrap text-center self-center"
+      >
+        <span>Get Your Own</span>
+      </RouterLink>
     </div> 
 </template>
 
@@ -65,7 +71,7 @@
 <style >
   #projects{
     padding: 0 20px;
-  }
+  } 
 
   #project-cards{
     display: grid;
@@ -74,8 +80,11 @@
   }
  .image{
     max-height: 270px;
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 10px;
+  }
+  .image img{
+    width: 100%;
   }
 
 </style>
